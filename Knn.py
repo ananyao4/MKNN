@@ -4,7 +4,7 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 
-st.header('Ananya Khiahwan')
+st.header('Ananya Khiaohwan')
 st.image('./img/รูปป.jpg')
 col1, col2, col3 = st.columns(3)
 
