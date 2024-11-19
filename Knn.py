@@ -31,10 +31,10 @@ st.markdown("")
 dt = pd.read_csv("./data/iris.csv")
 st.write(dt.head(10))
 
-dt1 = dt['petal.length'].sum()
-dt2 = dt['petal.width'].sum()
-dt3 = dt['sepal.length'].sum()
-dt4 = dt['sepal.width'].sum()
+dt1 = dt['petallength'].sum()
+dt2 = dt['petalwidth'].sum()
+dt3 = dt['sepallength'].sum()
+dt4 = dt['sepalwidth'].sum()
 
 dx = [dt1, dt2, dt3, dt4]
 dx2 = pd.DataFrame(dx, index=["d1", "d2", "d3", "d4"])
@@ -54,11 +54,11 @@ html_8 = """
 st.markdown(html_8, unsafe_allow_html=True)
 st.markdown("")
 
-pt_len = st.slider("กรุณาเลือกข้อมูล petal.length")
-pt_wd = st.slider("กรุณาเลือกข้อมูล petal.width")
+pt_len = st.slider("กรุณาเลือกข้อมูล petallength")
+pt_wd = st.slider("กรุณาเลือกข้อมูล petalwidth")
 
-sp_len = st.number_input("กรุณาเลือกข้อมูล sepal.length")
-sp_wd = st.number_input("กรุณาเลือกข้อมูล sepal.width")
+sp_len = st.number_input("กรุณาเลือกข้อมูล sepallength")
+sp_wd = st.number_input("กรุณาเลือกข้อมูล sepalwidth")
 
 if st.button("ทำนายผล"):
     #st.write("ทำนาย")
